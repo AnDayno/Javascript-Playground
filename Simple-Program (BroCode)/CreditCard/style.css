@@ -1,0 +1,66 @@
+body
+{
+ background-color: hsl(219, 34%, 79%);
+}
+
+.container
+{
+    background-color: rgb(199, 216, 238);
+    border: 1px solid;
+    width: fit-content;
+    padding: 20px;
+    margin: auto;
+    box-shadow: 2px 3px;
+}
+
+.myRadio
+{
+    cursor: pointer;
+}
+
+.myResult
+{
+    text-align: center;
+}
+
+#myCheckbox
+{
+    margin-bottom: 10px;
+    
+    cursor: pointer;
+}
+
+#checkBox
+{
+    color: hsl(240, 100%, 50%);
+}
+
+#visa
+{
+    color: hsl(203, 100%, 36%);
+}
+
+#masterCard
+{
+    color: hsl(353, 93%, 48%);
+}
+
+#paypal
+{
+    color: hsl(216, 47%, 31%);
+}
+
+#mySubmit
+{
+    margin-top: 10px;
+    margin-left: 25px;
+    background-color: hsl(198, 62%, 85%);
+    border-radius: 5px;
+    box-shadow: 1px 2px;
+}
+
+#mySubmit:hover
+{
+    background-color: hsl(198, 29%, 70%);
+    cursor: pointer;
+}
