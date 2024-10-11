@@ -1,0 +1,33 @@
+body
+{
+    background-color: rgba(194, 241, 255, 0.507);
+}
+
+#countLabel
+{
+    display: block;
+    text-align: center;
+    font-size: 10em;
+    font-family: Helvetica, sans-serif;
+}
+
+#btnContainer
+{
+    text-align: center;   
+}
+
+.buttons
+{
+    padding: 10px 20px;
+    font-size: 1.5em;
+    color: white;
+    background-color: hsla(204, 62%, 60%, 0.842);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: backgorund-color 0.25s;
+}
+
+.buttons:hover
+{
+    background-color: hsl(204, 63%, 54%);
+}
