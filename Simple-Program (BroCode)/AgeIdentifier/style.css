@@ -1,0 +1,33 @@
+body
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    background-color: hsl(34, 78%, 91%);
+}
+
+#myText
+{
+    margin-bottom: 10px;
+    background-color: hsla(26, 100%, 97%, 0.74);
+}
+
+#myButton
+{
+    font-size: 1em;
+    border-radius: 10px;
+    background-color: hsl(34, 58%, 82%);
+    box-shadow: 2px 3px rgb(146, 120, 85);
+}
+
+#myButton:hover
+{
+    background-color: hsl(34, 39%, 69%);
+    cursor: pointer;
+}
+
+#resultAge
+{
+    margin-top: 10px;
+    font-family: monospace;
+}
