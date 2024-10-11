@@ -1,0 +1,42 @@
+body {
+    background-color: #6E8898FF;
+}
+
+.container {
+    width: fit-content;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 1px solid;
+    margin: auto;
+    box-shadow: 2px 3px;
+    background-color: #9FB1BCFF;
+}
+
+#myLabel {
+    margin-bottom: 10px;
+}
+
+.buttonContainer {
+    display: flex; 
+    justify-content: center; 
+    gap: 10px; 
+}
+
+.allButton {
+    border-radius: 8px;
+    background-color: rgb(156, 192, 214);
+    cursor: pointer;
+}
+
+.allButton:hover {
+    background-color: rgb(81, 130, 160);
+}
+
+.allText {
+    color: rgb(17, 44, 58);
+    font-weight: bold;
+    font-size: 1em;
+    margin: 10px;
+}
