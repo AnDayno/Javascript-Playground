@@ -1,0 +1,78 @@
+body 
+{
+    background-color: rgb(127, 160, 126);
+}
+
+.container 
+{
+    background-color: rgb(212, 236, 212);
+    width: fit-content;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid;
+    border-radius: 20px;
+    margin: auto;
+    box-shadow: 2px 3px 5px;
+}
+
+.titleText
+{
+    color: rgb(24, 87, 15);
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.textBox
+{
+    background-color: rgb(220, 248, 217);
+    text-align: center;
+    margin-top: 5px;
+    border-radius: 5px; 
+}
+
+.textBox:focus
+{
+    outline: none;
+}
+
+.temperature
+{
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+}
+
+.temperature:checked
+{
+    background-color: #4CAF50;
+    border-color: #4CAF50;
+}
+
+.temperature:checked + label 
+{
+    color: #317420; 
+    font-weight: bold;
+}
+
+.buttonTemp
+{
+    background-color: #d0f8cb;
+    color: #0b2e03;
+    border-radius: 5px;
+    box-shadow: 1px 2px;
+    cursor: pointer;
+}
+
+.buttonTemp:hover
+{
+    background-color: #87b37f;
+}
+
+.allText
+{
+    color: rgb(59, 107, 53);
+}
