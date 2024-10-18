@@ -6,13 +6,22 @@ function rollDice()
     const values = [];
     const images = []; 
 
-    for (let i = 0; i < numOfDice; i++)
+    if (isNaN(numOfDice) || numOfDice < 1 || numOfDice > 100)
     {
-        const value = Math.floor(Math.random() * 6) + 1;
-        values.push(value);
-        images.push(`<img src="DiceImages/${value}.png">`)
+        diceResult.textContent = "Please enter number between 1-100";
+        diceImages.innerHTML = "";
+        return;
     }
-
-    diceResult.textContent = `dice: ${values.join(', ')}`;
-    diceImages.innerHTML = images.join('');
+    else
+    {
+        for (let i = 0; i < numOfDice; i++)
+            {
+                const value = Math.floor(Math.random() * 6) + 1;
+                values.push(value);
+                images.push(`<img src="DiceImages/${value}.png">`)
+            }
+        
+            diceResult.textContent = `dice: ${values.join(', ')}`;
+            diceImages.innerHTML = images.join('');
+    }
 }
