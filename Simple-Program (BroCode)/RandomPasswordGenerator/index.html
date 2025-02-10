@@ -7,6 +7,24 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <label>Random Password Generator</label><br>
+    <input type="text" id="result"><br
+    >
+    <input type="number" placeholder="1"><br>
+
+    <input type="radio" id="includeLowercase">
+    <label for="includeLowercase">Include Lowercase</label><br>
+
+    <input type="radio" id="includeUppercase">
+    <label for="includeUppercase">Include Uppercase</label><br>
+
+    <input type="radio" id="includeNumber">
+    <label for="includeNumber">Include Number</label><br>
+
+    <input type="radio" id="includeSymbols">
+    <label for="includeSymbols">Include Symbols</label><br>
+
+    <button type="button" onclick="GeneratePassword()">Generate</button>
     
     <script src="index.js"></script>
 </body>

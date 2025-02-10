@@ -1,3 +1,5 @@
+const result = document.getElementById("result");
+
 function GeneratePassword(length, includeLowercase, includeUppercase, includeNumbers, includeSymbols)
 {
     const lowercaseChars = "abcdefghijklmnopqrstuvwxyz";
@@ -26,6 +28,7 @@ function GeneratePassword(length, includeLowercase, includeUppercase, includeNum
     {
         const randomIndex = Math.floor(Math.random() * allowedChars.length) + 1;
         password += allowedChars[randomIndex];
+        result.value = password;
     }
     
     return password;
