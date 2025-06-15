@@ -58,9 +58,16 @@ function styleButton(button) {
     button.style.backgroundColor = "green";
     button.textContent += "😄";
 
-    button.addEventListener("click", e => e.target.remove());
-    button.addEventListener("mouseover", e => e.target.style.backgroundColor = "#3387a3");
-    button.addEventListener("mouseout", e => e.target.style.backgroundColor = "green");
+    button.addEventListener("click", e => {
+    e.target.remove();
+    buttons = document.querySelectorAll(".myButtons");
+    console.log("Updated buttons:", buttons);
+    });
+
+    button.addEventListener("mouseover", e => {
+        e.target.style.backgroundColor = "#3387a3"});
+    button.addEventListener("mouseout", e => {
+        e.target.style.backgroundColor = "green"});
 };
 
 buttons.forEach(styleButton);
