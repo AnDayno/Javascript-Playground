@@ -10,9 +10,10 @@
     replace(oldClass, newClass)
     contains()
 */
+// ----------------- EXAMPLE 1 -----------------
 
-const myH1 = document.getElementById("myH1");
-const myButton = document.getElementById("myButton");
+// const myH1 = document.getElementById("myH1");
+// const myButton = document.getElementById("myButton");
 
 // ----------------- ADD And Remove -----------------
 // myButton.classList.add("enabled");
@@ -45,26 +46,56 @@ const myButton = document.getElementById("myButton");
 // });
 
 // ----------------- Contains -----------------
-myH1.classList.add("enabled");
+// myH1.classList.add("enabled");
 
-myH1.addEventListener("click", e => {
-    if(e.target.classList.contains("disabled")){
-        e.target.textContent += "😒";
-    }
-    else{
-        e.target.classList.replace("enabled","disabled");
-    }
+// myH1.addEventListener("click", e => {
+//     if(e.target.classList.contains("disabled")){
+//         e.target.textContent += "😒";
+//     }
+//     else{
+//         e.target.classList.replace("enabled","disabled");
+//     }
+// });
+
+// myButton.classList.add("enabled");
+
+// myButton.addEventListener("click", e => {
+
+//     if(e.target.classList.contains("disabled")){
+//         e.target.textContent = "It is already Disabled";
+//     }
+//     else{
+//         e.target.classList.replace("enabled", "disabled");
+//     }
+// });
+
+// ----------------- EXAMPLE 2 -----------------
+
+let buttons = document.querySelectorAll(".myButtons");
+
+buttons.forEach(button => {
+    button.classList.add("enabled");
 });
 
-myButton.classList.add("enabled");
-
-myButton.addEventListener("click", e => {
-
-    if(e.target.classList.contains("disabled")){
-        e.target.textContent = "It is already Disabled";
-    }
-    else{
-        e.target.classList.replace("enabled", "disabled");
-    }
+buttons.forEach(button => {
+    button.addEventListener("mouseover", e => {
+        e.target.classList.toggle("hover");
+    });
 });
 
+buttons.forEach(button => {
+    button.addEventListener("mouseout", e => {
+        e.target.classList.toggle("hover");
+    });
+});
+
+buttons.forEach(button => {
+    button.addEventListener("click", e => {
+        if(e.target.classList.contains("disabled")){
+            e.target.textContent = "disabled";
+        }
+        else{
+            e.target.classList.replace("enabled","disabled");
+        }
+    });
+});
