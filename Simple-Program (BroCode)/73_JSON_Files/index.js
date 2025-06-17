@@ -73,3 +73,14 @@ const jsonPeople = `[{
 const parsedData = JSON.parse(jsonPeople);
 
 console.log(parsedData);
+
+// ----------- Fetch() -----------
+
+fetch("person.json")
+    .then(response => response.json())
+    .then(value => console.log(value))
+
+fetch("people.json")
+    .then(response => response.json())
+    .then(values => values.forEach(value => console.log(value)))
+    .catch(error => console.log(error));
